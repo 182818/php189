@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>新建网页 1</title>
+</head>
+<body onload="showTime()">
+<script>
+function showTime(){
+now=new Date();
+display=now.toLocaleString();
+document.title=display;
+status=display;
+setTimeout("showTime()",1000)
+}
+</script>
+</body>
+</html>
